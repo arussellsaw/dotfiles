@@ -10,7 +10,11 @@ require("menubar")
 
 -- Load Debian menu entries
 require("debian.menu")
-local treesome = require("treesome")
+
+-- Removed Treesome, as it doesn't seem to work
+--local treesome = require("treesome")
+
+
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
 -- another config (This code will only ever execute for the fallback config)
@@ -68,7 +72,7 @@ layouts =
     awful.layout.suit.max,
     awful.layout.suit.max.fullscreen,
     awful.layout.suit.magnifier,
-    treesome
+--    treesome
 }
 -- }}}
 
@@ -206,8 +210,8 @@ root.buttons(awful.util.table.join(
 
 -- {{{ Key bindings
 globalkeys = awful.util.table.join(
-    awful.key({ modkey }, "v", treesome.vertical),
-    awful.key({ modkey }, "h", treesome.horizontal),
+--    awful.key({ modkey }, "v", treesome.vertical),
+--    awful.key({ modkey }, "h", treesome.horizontal),
     awful.key({ modkey,           }, "Left",   awful.tag.viewprev       ),
     awful.key({ modkey,           }, "Right",  awful.tag.viewnext       ),
     awful.key({ modkey,           }, "Escape", awful.tag.history.restore),
