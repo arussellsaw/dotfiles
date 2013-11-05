@@ -17,3 +17,7 @@ Compton:
 BashRC:
 ========
 ./bash/bash.bashrc -- /etc/bash.bashrc (i shouldn't use this location but i do.)
+
+URxvt:
+========
+./urxvt/Xdefaults -- ~/.Xdefaults
